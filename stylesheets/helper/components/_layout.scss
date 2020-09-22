@@ -1,0 +1,543 @@
+body {
+  font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體,
+    新細明體, Arial, sans-serif;
+
+  a {
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+
+  background-color: #f9fcff;
+}
+
+thead {
+  span {
+    display: block;
+    width: 5em;
+
+    @include Medium-size {
+      width: 0;
+    }
+  }
+}
+
+.gary-bg {
+  background-color: #e2e2e2;
+}
+
+.dropdown-menu {
+  .dropdown-item {
+    text-align: center;
+  }
+}
+
+.col-form-label {
+  padding-top: 0;
+}
+
+.list-btn {
+  border-radius: 0.25rem;
+  width: 7.5em;
+  margin: 0 0.5rem;
+}
+
+.table-btn {
+  margin-bottom: 0.25rem;
+  width: 3.75em;
+}
+
+.list-btn-group {
+  .btn {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.nav-tag-btn {
+  letter-spacing: 0.1rem;
+
+  a {
+    padding: 0.5% 2%;
+    margin-right: 1%;
+    background-color: #fff;
+    border: 0.188em solid $secondary;
+  }
+
+  .active {
+    color: #fff !important;
+    border: 0.188em solid #565759;
+    background-color: #565759 !important;
+    border-bottom: 0.313em solid #565759;
+  }
+}
+
+.card-header {
+  font-size: 1.2rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+
+.footer-bg {
+  line-height: 1.8rem;
+}
+
+.table-title,
+.form-title {
+  font-weight: bold;
+  color: $primary;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
+
+  @include Small-size {
+    padding-bottom: calc(0.375rem + 0.063em);
+  }
+}
+
+.form-title-wrap {
+  white-space: nowrap;
+}
+
+.primary-nav {
+  display: flex;
+}
+
+.primary-navbar-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  li {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.3rem 0;
+    width: 100%;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+
+    @include Medium-size {
+      font-size: 1.2rem;
+      padding: 0;
+    }
+
+    @include Large-size {
+      width: 25%;
+    }
+  }
+
+  .phone-login {
+    width: 100%;
+  }
+}
+
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
+}
+
+.page-link {
+  border: 0;
+
+  &:hover {
+    background-color: $light-ivory;
+  }
+}
+
+.dropdown-item {
+  &:hover {
+    background-color: $primary;
+    color: #fff;
+  }
+}
+
+.login-tag {
+  a {
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+  }
+
+  .identity {
+    font-size: 0.86rem;
+    font-weight: bold;
+  }
+}
+
+.login-status {
+  span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+
+    @include Large-size {
+      font-size: 0.86rem;
+    }
+  }
+
+  .span-block {
+    @media (max-width: 30.438em) {
+      display: block;
+    }
+  }
+}
+
+.file-function-btn-group {
+  input {
+    width: 4.375em;
+  }
+
+  button {
+    width: auto;
+
+    @include Medium-size {
+      width: 3.75em;
+    }
+  }
+}
+
+.scroll-content {
+  overflow: scroll;
+  height: 25.000em;
+
+  @include Medium-size {
+    height: 50.000em;
+  }
+}
+
+.file-content {
+  height: 28.125em;
+}
+
+.nav-link {
+  width: 100%;
+
+  @include Large-size {
+    width: auto;
+  }
+
+  @include Large-size {
+    padding: 0;
+  }
+}
+
+.nav-logo {
+  .ROC-title {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+
+    @include Small-size {
+      font-size: 1.2rem;
+    }
+
+    @include Medium-size {
+      font-size: 1.4rem;
+    }
+
+    @include Extra-large {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.header-bg {
+  display: none !important;
+  padding-bottom: 1.250em;
+  padding-top: 0.938em;
+
+  @include Large-size {
+    display: block !important;
+  }
+
+  background-image: url(../../../img/tgos_header_bg.svg);
+  background-repeat: no-repeat;
+  background-size: auto 10.000em;
+  background-position-y: top;
+  background-position: right;
+
+  .logo-img {
+    width: 16%;
+    margin-right: 2%;
+
+  }
+
+}
+
+.user-content {
+  text-align: end;
+}
+
+.phone-title {
+  text-align: center;
+  width: 80%;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+
+  img {
+    height: 1.563em;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-right: 2%;
+
+    @include Small-size {
+      height: 1.875em;
+    }
+
+    @include Medium-size {
+      height: 1.6em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .nav-logo {
+    margin-top: 3%;
+  }
+
+  @include Medium-size {
+    font-size: 1.5rem;
+  }
+
+  @include Large-size {
+    width: 0;
+    display: none;
+  }
+}
+
+.phone-login {
+  @include Large-size {
+    display: none;
+  }
+
+  .login-tag {
+    font-size: 1rem;
+
+    @include Medium-size {
+      font-size: 1.1rem;
+    }
+  }
+
+  .login-status {
+    padding-top: 0.5rem;
+
+    span {
+      display: block;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+
+  @include Medium-size {
+    font-size: 1.5rem;
+  }
+}
+
+.modal-contant {
+  .article-title {
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+  }
+
+  p {
+    line-height: 1.7rem;
+    letter-spacing: 0.02rem;
+  }
+}
+
+.file-list {
+  input {
+    margin-bottom: 0 !important;
+  }
+
+  .form-check-input {
+    margin-top: 0;
+  }
+
+  img {
+    width: 1.563em;
+  }
+}
+
+.thead-style {
+  background-color: #ececec;
+  border-bottom: 0.188em solid #fff;
+
+  th {
+    white-space: nowrap;
+  }
+}
+
+.page-text {
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.page-btn {
+  @include Small-size {
+    display: none;
+  }
+}
+
+.card-table {
+  padding: 2.5rem;
+  padding-top: 1rem;
+}
+
+.table-style {
+  width: 100%;
+
+  tbody {
+    padding: 1.5rem !important;
+  }
+
+  th {
+    padding-right: 0.938em;
+    padding-left: 0.938em;
+  }
+
+  th,
+  td {
+    border-bottom: 0.063em #dee2e6 solid;
+  }
+
+  .no-border {
+    border: 0;
+  }
+
+
+}
+
+.service-span-block {
+  display: block;
+}
+
+.service-paper-download {
+  font-weight: 400;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+.form-style {
+
+  // input,
+  select {
+    margin-bottom: 0.5rem;
+  }
+
+  .form-border {
+    border-bottom: 0.063em #dee2e6 solid;
+  }
+
+  .form-border-display {
+    border-bottom: none;
+
+    @include Medium-size {
+      border-bottom: 0.063em #dee2e6 solid;
+    }
+  }
+
+  .signin-box-border {
+    border-bottom: 0.063em #fff solid;
+  }
+}
+
+.signin-card {
+  border: 0.625em solid #fff;
+}
+
+.alert-bg {
+  background-color: $light-ivory;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+
+  label {
+    margin-top: 0.5rem;
+    width: 6.250em;
+    text-align: right;
+    margin-right: 0.5rem;
+
+    @include Large-size {
+      text-align: left;
+    }
+  }
+
+  .input-style {
+    @include Large-size {
+      width: 100%;
+    }
+  }
+}
+
+.search-form-btn {
+  @include Large-size {
+    display: flex;
+    justify-content: center;
+    height: 2.250em;
+  }
+
+  @include Medium-size {
+    height: auto;
+  }
+}
+
+.check-td-btn {
+  a {
+    width: 7.5em;
+    margin-bottom: 0.5rem;
+    margin-right: 0.25rem;
+  }
+}
+
+.td-list-item {
+  display: flex;
+  justify-content: space-between;
+
+  @include Extra-large {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.count-btn {
+  width: 2.5em;
+}
+
+.modal-content,
+.modal-footer {
+  border: 0;
+}
+
+.modal-title {
+  font-size: 1.2rem;
+  letter-spacing: 0.01rem;
+}
+
+.new-application-bg {
+  background-color: #1c526f !important;
+}
+
+.change-application-bg {
+  background-color: #3b2b57 !important;
+}
+
+.disagree-application-bg {
+  background-color: #0c3565 !important;
+}

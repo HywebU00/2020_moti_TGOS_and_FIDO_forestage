@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/all.css" />
+  <title>案件進度查詢–列表</title>
+</head>
+
+<body>
+  <header class="bg-white">
+    <div class="d-flex header-bg ">
+      <div class="container pt-3 pb-1 d-flex align-items-center justify-content-between">
+        <div class=" d-flex align-items-center ">
+          <img class="logo-img" src="img/Ministry-of-the-Interior-logo-sm.png" alt="">
+          <div class="nav-logo text-primary">
+            <span class="ROC-title">
+              中華民國內政部 MINISTRY OF THE INTERIOR
+              REPUBLIC OF CHINA(TAIWAN)　
+            </span><br>
+            <h1>地理資訊圖資雲(TGOS)線上申辦系統</h1>
+          </div>
+        </div>
+        <div class="row user-content">
+          <div class="col-md-12 pt-1 pb-1">
+            <div class="login-tag row justify-content-end align-items-center">
+              <span class="mr-2 identity">
+                凌網科技股份有限公司 <span>呂毛尼</span>
+              </span>
+              <a href="" class="mr-2">| 登出</a>
+            </div>
+            <div class="login-status row mt-1">
+              <span class="mr-2 col-lg-12">
+                登入時間: 2020/08/07 11:32:27
+              </span>
+              <span class="mr-2 col-lg-12">
+                登出倒數: 29:34
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav
+    class="sticky-top navbar navbar-expand-lg navbar-light bg-light justify-content-center primary-nav shadow-sm mb-2">
+    <div class="container ">
+      <div class="phone-title">
+        <img src="img/Ministry-of-the-Interior-logo-sm.png" alt="">
+        <div class="nav-logo text-primary">
+          地理資訊圖資雲(TGOS)線上申辦系統
+        </div>
+      </div>
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav primary-navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link text-primary" href="#">待辦事項</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              線上申辦
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">初次申請1</a>
+              <a class="dropdown-item" href="#">初次申請2</a>
+              <a class="dropdown-item" href="#">初次申請3</a>
+              <a class="dropdown-item" href="#">初次申請4</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">進度查詢</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">帳號維護</a>
+          </li>
+          <li class="nav-item phone-login">
+            <div class="login-tag ">
+              <a href="" class="mr-2">使用者登出</a>
+            </div>
+            <div class="login-status ">
+              <span class="mr-2">
+                凌網科技股份有限公司<span>呂毛尼</span>
+              </span>
+              <span class="mr-2">
+                登入時間: 2020/08/07 11:32:27
+              </span>
+              <span class="mr-2">
+                登出倒數: 29:34
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container ">
+    <div class="pt-3 pb-5">
+      <h2 class="title text-primary pt-4">案件進度查詢–列表</h2>
+      <div class="row pb-4 pt-4">
+        <div class="col-12 mt-2">
+          <div class="card shadow-sm ">
+            <div class="card-header bg-primary text-white ">
+              案件進度查詢–列表
+            </div>
+            <div class="card-body table-responsive">
+              <table class="table ">
+                <thead class="">
+                  <tr class="thead-style">
+                    <th scope="col">項次</th>
+                    <th scope="col">申請人</th>
+                    <th scope="col">申辦項目</th>
+                    <th scope="col">申請案號</th>
+                    <th scope="col">辦理階段</th>
+                    <th scope="col">申請日期</th>
+                    <th scope="col">操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">1</td>
+                    <td>呂○○</td>
+                    <td>全國門牌地址定位服務</td>
+                    <td>109551002223</td>
+                    <td>審核中</td>
+                    <td>2020/08/06</td>
+                    <td>
+                      <a href="#" class="btn btn-primary table-btn">檢視</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">2</td>
+                    <td>高○○</td>
+                    <td>線上批次比對服務</td>
+                    <td>109551003221</td>
+                    <td>完成</td>
+                    <td>2020/08/06</td>
+                    <td>
+                      <a href="#" class="btn btn-primary table-btn">檢視</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="#" class="btn btn-primary list-btn">回查詢頁</a></div>
+    </div>
+  </div>
+  <footer class="bg-primary footer-bg p-4 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 mr-auto text-light mb-2 footer-text">
+          地址：10482 臺北市中山區松江路469巷4號 電話：02-2513-2245</br>
+          本網站適用Chrome 17.0、Firefox 10.0、IE9.0以上版本之瀏覽器</br>
+          最佳解析度：1024 x 768 版權所有© 2020 Copyright MOI All Rights Reserved.
+        </div>
+        <div class="col-md-3">
+          <img src="img/accessibility.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
