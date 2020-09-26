@@ -10818,6 +10818,16 @@ body a {
   cursor: pointer;
 }
 
+.btn-primary {
+  background-color: #696868;
+  border-color: #696868;
+}
+
+.btn-primary:hover {
+  background-color: #1e62ab;
+  border-color: #1e62ab;
+}
+
 thead span {
   display: block;
   width: 5em;
@@ -10841,6 +10851,32 @@ thead span {
   padding-top: 0;
 }
 
+.interview-list-block {
+  display: inline-block;
+}
+
+@media (min-width: 48em) {
+  .interview-list-block {
+    display: block;
+  }
+}
+
+.list-title {
+  color: #565759;
+  background-color: rgba(0, 0, 0, 0.07);
+  font-size: 1.2rem;
+  margin-right: 1em;
+  margin-left: 1em;
+  border-radius: 0.25em;
+  padding: .3em .5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.bg-light-blue {
+  background-color: #e0f6ff;
+}
+
 .list-btn {
   border-radius: 0.25rem;
   width: 7.5em;
@@ -10856,26 +10892,87 @@ thead span {
   margin-bottom: 0.5rem;
 }
 
+.navbar-bg {
+  background-color: #d5f2ff;
+}
+
+@media (min-width: 62em) {
+  .navbar-bg {
+    background-color: #1e62ab;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #1e62ab;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #565759;
+}
+
+@media (min-width: 62em) {
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #d5f2ff;
+  }
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #fff;
+  }
+}
+
 .nav-tag-btn {
   letter-spacing: 0.1rem;
+  margin-bottom: 0.5em;
 }
 
 .nav-tag-btn a {
-  padding: 0.5% 2%;
-  margin-right: 1%;
-  background-color: #fff;
-  border: 0.188em solid #c4d0dc;
+  padding: 0.6em 2em;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.nav-tag-btn a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 48em) {
+  .nav-tag-btn a {
+    padding: 0.5em 2em;
+  }
 }
 
 .nav-tag-btn .active {
   color: #fff !important;
-  border: 0.188em solid #565759;
   background-color: #565759 !important;
-  border-bottom: 0.313em solid #565759;
+  position: relative;
+}
+
+.nav-tag-btn .active:after {
+  display: none;
+}
+
+@media (min-width: 62em) {
+  .nav-tag-btn .active:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 14px 0 14px;
+    border-color: #555759 transparent transparent transparent;
+  }
 }
 
 .card-header {
   font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  color: #fff;
+  font-weight: bold;
+  background-color: #44596d;
 }
 
 .footer-text {
@@ -10889,8 +10986,7 @@ thead span {
 
 .table-title,
 .form-title {
-  font-weight: bold;
-  color: #1e62ab;
+  color: #565759;
   letter-spacing: 0.02rem;
   line-height: 1.5;
 }
@@ -11019,8 +11115,17 @@ thead span {
   }
 }
 
+.scroll-list {
+  overflow: scroll;
+  height: 55.6875em;
+}
+
 .file-content {
   height: 28.125em;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
 }
 
 .nav-link {
@@ -11036,6 +11141,19 @@ thead span {
 @media (min-width: 62em) {
   .nav-link {
     padding: 0;
+  }
+}
+
+@media (min-width: 62em) {
+  .nav-link-width {
+    width: 12em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 75em) {
+  .nav-link-width {
+    width: auto;
   }
 }
 
@@ -11177,7 +11295,7 @@ thead span {
 
 @media (min-width: 48em) {
   .title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -11228,6 +11346,10 @@ thead span {
   padding-top: 1rem;
 }
 
+.tbody-list td {
+  vertical-align: center;
+}
+
 .table-style {
   width: 100%;
 }
@@ -11243,6 +11365,8 @@ thead span {
 
 .table-style th,
 .table-style td {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
   border-bottom: 0.063em #dee2e6 solid;
 }
 
@@ -11381,11 +11505,20 @@ thead span {
 }
 
 .change-application-bg {
-  background-color: #3b2b57 !important;
+  background-color: #48405a !important;
 }
 
 .disagree-application-bg {
-  background-color: #0c3565 !important;
+  background-color: #294361 !important;
+}
+
+.comparison-bg {
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .index-link-btn {
@@ -11430,6 +11563,13 @@ thead span {
   background-size: auto 100%;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-top: 2em;
+}
+
+@media (min-width: 75em) {
+  .mp-btn-content-bg {
+    margin-top: 0em;
+  }
 }
 
 .mp-btn-content-bg h2 {

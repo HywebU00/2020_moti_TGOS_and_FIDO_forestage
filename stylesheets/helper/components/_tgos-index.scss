@@ -35,6 +35,11 @@
   background-size: auto 100%;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-top: 2em;
+
+  @include Extra-large {
+    margin-top: 0em;
+  }
 
   h2 {
     padding-top: 8%;

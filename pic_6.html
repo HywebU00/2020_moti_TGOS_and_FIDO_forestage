@@ -44,7 +44,7 @@
     </div>
   </header>
   <nav
-    class="sticky-top navbar navbar-expand-lg navbar-light bg-light justify-content-center primary-nav shadow-sm mb-2">
+    class="sticky-top navbar navbar-expand-lg navbar-light navbar-bg justify-content-center primary-nav shadow-sm">
     <div class="container ">
       <div class="phone-title">
         <img src="img/Ministry-of-the-Interior-logo-sm.png" alt="">
@@ -59,10 +59,10 @@
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav primary-navbar-nav">
           <li class="nav-item ">
-            <a class="nav-link text-primary" href="#">待辦事項</a>
+            <a class="nav-link " href="#">待辦事項</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               線上申辦
             </a>
@@ -74,10 +74,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#">進度查詢</a>
+            <a class="nav-link" href="#">進度查詢</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#">帳號維護</a>
+            <a class="nav-link " href="#">帳號維護</a>
           </li>
           <li class="nav-item phone-login">
             <div class="login-tag ">
@@ -100,10 +100,14 @@
     </div>
   </nav>
   <div class="container ">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#application-modal"
+
+    <div class="pt-md-5 pt-3 pb-5">
+      <h2 class="title text-primary pt-4">
+        <p>圖6 新增申請案</p>
+      </h2>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#application-modal"
       data-whatever="@fat">新增申請案
     </button>
-    <div class="pt-3 pb-5">
       <!-- 申請問題頁視窗(隱藏) -->
       <div class="modal fade" id="application-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -117,8 +121,8 @@
             </div>
             <div class="modal-body card-table">
               <div class="row mb-3">
-                <label class="col-md-3 col-form-label form-title">您本次欲申辦的項目</label>
-                <div class="col-md-9">
+                <label class="col-md-5 col-form-label form-title">您本次欲申辦的項目</label>
+                <div class="col-md-7">
                   <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                     <option selected>Choose...</option>
                     <option value="1">One</option>
@@ -128,8 +132,8 @@
                 </div>
               </div>
               <div class="row">
-                <label class="col-md-3 col-form-label form-title">您現在是否在中華民國境內申請</label>
-                <div class="col-md-9">
+                <label class="col-md-5 col-form-label form-title">您現在是否在中華民國境內申請</label>
+                <div class="col-md-7">
                   <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                     <option selected>Choose...</option>
                     <option value="1">One</option>
@@ -157,8 +161,8 @@
           </div>
           <div class="modal-body card-table">
             <div class="row mb-3">
-              <label class="col-md-3 col-form-label form-title">您本次欲申辦的項目</label>
-              <div class="col-md-9">
+              <label class="col-md-5 col-form-label form-title">您本次欲申辦的項目</label>
+              <div class="col-md-7">
                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                   <option selected>Choose...</option>
                   <option value="1">One</option>
@@ -168,8 +172,8 @@
               </div>
             </div>
             <div class="row">
-              <label class="col-md-3 col-form-label form-title">您現在是否在中華民國境內申請</label>
-              <div class="col-md-9">
+              <label class="col-md-5 col-form-label form-title">您現在是否在中華民國境內申請</label>
+              <div class="col-md-7">
                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                   <option selected>Choose...</option>
                   <option value="1">One</option>
