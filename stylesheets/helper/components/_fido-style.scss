@@ -1,0 +1,37 @@
+$fido-primary: #047D81;
+$fido-light:#caeff0;
+
+.fido-header-bg {
+    background-image: url(../img/fido_header_bg.svg);
+}
+
+.fido-nav {
+    background-color: $fido-light;
+
+    @include Large-size {
+        background-color: $fido-primary;
+
+    }
+}
+
+.fido-footer {
+    background-color: #cfcfcf;
+}
+
+.fido-btn-primary {
+    background-color: #696868;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        background-color: $fido-primary;
+    }
+}
+
+.fido-btn-light {
+    background-color: $fido-light;
+
+    &:hover {
+        background-color: #bbe1e2;
+    }
+}

@@ -12,6 +12,14 @@ body {
 
 }
 
+.link-style {
+  color: #2371c6;
+  text-decoration: underline !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
 
 .btn-primary {
   background-color: #696868;
@@ -455,7 +463,8 @@ thead {
   font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  text-align: center;
+  padding-bottom: 0.3em;
+  border-bottom: 0.1em solid #b2b2b2;
 
   @include Medium-size {
     font-size: 1.7rem;
@@ -553,10 +562,9 @@ thead {
   display: block;
 }
 
-.service-paper-download {
-  font-weight: 400;
-  text-decoration: underline !important;
-  cursor: pointer;
+.nodocument {
+  color: #2371c6;
+  ;
 }
 
 .form-style {

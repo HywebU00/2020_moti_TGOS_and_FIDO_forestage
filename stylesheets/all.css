@@ -10818,6 +10818,15 @@ body a {
   cursor: pointer;
 }
 
+.link-style {
+  color: #2371c6;
+  text-decoration: underline !important;
+}
+
+.link-style:hover {
+  text-decoration: none !important;
+}
+
 .btn-primary {
   background-color: #696868;
   border-color: #696868;
@@ -11290,7 +11299,8 @@ thead span {
   font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  text-align: center;
+  padding-bottom: 0.3em;
+  border-bottom: 0.1em solid #b2b2b2;
 }
 
 @media (min-width: 48em) {
@@ -11378,10 +11388,8 @@ thead span {
   display: block;
 }
 
-.service-paper-download {
-  font-weight: 400;
-  text-decoration: underline !important;
-  cursor: pointer;
+.nodocument {
+  color: #2371c6;
 }
 
 .form-style select {
@@ -11603,5 +11611,41 @@ thead span {
   .btn-icon {
     width: 35%;
   }
+}
+
+.fido-header-bg {
+  background-image: url(../img/fido_header_bg.svg);
+}
+
+.fido-nav {
+  background-color: #caeff0;
+}
+
+@media (min-width: 62em) {
+  .fido-nav {
+    background-color: #047D81;
+  }
+}
+
+.fido-footer {
+  background-color: #cfcfcf;
+}
+
+.fido-btn-primary {
+  background-color: #696868;
+  color: #fff;
+}
+
+.fido-btn-primary:hover {
+  color: #fff;
+  background-color: #047D81;
+}
+
+.fido-btn-light {
+  background-color: #caeff0;
+}
+
+.fido-btn-light:hover {
+  background-color: #bbe1e2;
 }
 /*# sourceMappingURL=all.css.map */
